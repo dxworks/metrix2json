@@ -12,7 +12,7 @@ Let's see what we get for the following CSV input file.
 You can make a file like this by running metrix++ on this project.
 I will run; 
 
-```java -DinputCSV="path/to/your/input.csv" -DoutputJson="path/to/your/output.json" -jar target/metrix2json-jar-with-dependencies.jar```
+`java -DinputCSV="path/to/your/input.csv" -DoutputJson="path/to/your/output.json" -jar target/metrix2json-jar-with-dependencies.jar`
 
 NOTE: keep in mind to add `-jar target/metrix2json-jar-with-dependencies.jar` at the end.
 
