@@ -1,22 +1,3 @@
-# Metrixpp To JSON
-
-This is a tool that helps you to make a json output from a metrix++ CSV file.
-
-## Usage
-
-Use the following maven command to build this project `mvn clean install`.
-
-Then, you can run this tool and output the results in the stdout or in a json file.
-
-Let's see what we get for the following CSV input file. 
-You can make a file like this by running metrix++ on this project.
-I will run; 
-
-```java -DinputCSV="path/to/your/input.csv" -DoutputJson="path/to/your/output.json" -jar target/metrix2json-jar-with-dependencies.jar```
-
-NOTE: keep in mind to add `-jar target/metrix2json-jar-with-dependencies.jar` at the end.
-
-```csv
 file,region,type,modified,line start,line end,std.code.complexity:cyclomatic,std.code.complexity:maxindent,std.code.lines:code,std.code.lines:preprocessor,std.code.lines:comments,std.code.mi:simple,std.code.member:globals
 ./src/main/java/org/dxworks/metrix2json/Entity/Metrix2JsonOutput.java,__global__,global,,1,49,,,4,0,0,1,
 ./src/main/java/org/dxworks/metrix2json/Entity/Metrix2JsonOutput.java,Metrix2JsonOutput,class,,8,48,,,12,0,0,1,
@@ -56,4 +37,3 @@ file,region,type,modified,line start,line end,std.code.complexity:cyclomatic,std
 ./src/main/java/org/dxworks/metrix2json/Reader/MetrixppCSVFileReader.java,getInstance,function,,15,17,0,1,3,0,0,1,
 ./src/main/java/org/dxworks/metrix2json/Reader/MetrixppCSVFileReader.java,readFileCSV,function,,19,21,0,1,3,0,0,1,
 ./src/main/java/org/dxworks/metrix2json/Reader/MetrixppCSVFileReader.java,,file,,1,23,,,,,,,
-```  
